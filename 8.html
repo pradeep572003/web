@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compute Average Marks</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #000000;
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: aqua;
+            margin-bottom: 30px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin: 15px auto 5px auto;
+            width: 55%;
+            color: rgb(240, 239, 243);
+        }
+        input {
+            padding: 5px;
+            font-size: 1rem;
+            width: 200px;
+            text-align: center;
+        }
+        .my-button-class {
+            color: rgb(245, 245, 245);
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: rgb(50, 24, 250);
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML5 Form To Compute Average Marks</h1>
+
+    <form class="container">
+        <label>Register Number:</label>
+        <input type="text" id="regNo">
+        
+        <label>Subject Code:</label>
+        <input type="text" id="subCode">
+        
+        <label>Marks in Test 1:</label>
+        <input type="number" id="marks1">
+        
+        <label>Marks in Test 2:</label>
+        <input type="number" id="marks2">
+        
+        <label>Marks in Test 3:</label>
+        <input type="number" id="marks3">
+        
+        <button type="button" onclick="calculateAverage()" class="my-button-class">Calculate Average</button>
+    </form>
+
+    <script>
+        function calculateAverage() {
+            var regNo = document.getElementById("regNo").value.trim();
+            var subCode = document.getElementById("subCode").value.trim();
+            var m1 = document.getElementById("marks1").value;
+            var m2 = document.getElementById("marks2").value;
+            var m3 = document.getElementById("marks3").value;
+
+            if (regNo === "" || subCode === "") {
+                alert("Please fill in Register Number and Subject Code fields.");
+                return;
+            }
+
+            if (m1 === "" || m2 === "" || m3 === "") {
+                alert("Please fill in all test marks fields.");
+                return;
+            }
+
+            var marks1 = parseFloat(m1);
+            var marks2 = parseFloat(m2);
+            var marks3 = parseFloat(m3);
+
+            if (isNaN(marks1) || isNaN(marks2) || isNaN(marks3) || marks1 < 0 || marks2 < 0 || marks3 < 0) {
+                alert("Please fill in all fields with valid positive numbers.");
+                return;
+            }
+
+            let min = Math.min(marks1, marks2, marks3);
+            let total = marks1 + marks2 + marks3;
+            var average = (total - min) / 2;
+
+            alert("Average Marks: " + average.toFixed(2));
+        }
+    </script>
+
+</body>
+</html>
