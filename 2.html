@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 3px solid black;
+            align-items: center;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            max-width: 600px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Student Feedback Form</h1>
+    </center>
+    <form>
+        <label><b>Full name:</b></label><br>
+        <input type="text" name="fullname" placeholder="Your name" size="60">
+        <br><br>
+
+        <label><b>E-mail:</b></label><br>
+        <input type="text" name="email" placeholder="Your email" size="60">
+        <br><br>
+
+        <label><b>USn: </b></label>
+        <input type="text" name="usn" placeholder="your usn" size="60">
+        <br><br>
+
+        <label><b>Select Semester: </b></label><br>
+        <select name="semester">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+        </select>
+        <br><br>
+
+        <label><b>Branch: </b></label><br>
+        <input type="radio" name="branch" value="CSE"> Computer Science and Engineering
+        <br>
+
+        <input type="radio" name="branch" value="ISE"> Information Science and Engineering
+        <br>
+
+        <input type="radio" name="branch" value="ECE"> Electronics and Communication Engineering
+        <br>
+
+        <input type="radio" name="branch" value="ECE"> Electronics and Communication Engineering
+        <br>
+
+        <input type="radio" name="branch" value="NCB"> Non-Circuit Branch
+        <br><br>
+
+        <label><b>Feedback: </b></label><br>
+        <textarea name="feedback" rows="8" cols="60" placeholder="Your Feedback> & Suggestions"></textarea>
+        <br>
+        <br>
+
+        <label><b>send me a copy of this Feedback Form</b></label>
+        <br><br>
+
+        <input type="checkbox" name="copy">
+        <br><br>
+
+        <input type = "submit" value="Submit">
+        <br><br> 
+    </form>
+    <hr>
+    <center>
+        <h1>&copy; JSS science and technology</h1>
+    </center>
+</body>
+</html>
