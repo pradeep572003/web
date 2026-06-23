@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Design Example</title>
+    <link rel="stylesheet" href="5style.css">
+</head>
+<body>
+
+    <section>
+        <h1 class="heading">1. Different font styles</h1>
+        
+        <p class="normal">WEB TECHNOLOGY <span>[This is a normal paragraph]</span></p>
+        <p class="italic">WEB TECHNOLOGY <span>[This is a paragraph is italic]</span></p>
+        <p class="oblique">WEB TECHNOLOGY <span>[This is a paragraph is oblique]</span></p>
+        <p class="bold">WEB TECHNOLOGY <span>[This is a paragraph is bold]</span></p>
+        <p class="small-caps">WEB TECHNOLOGY <span>[this paragraph is small caps]</span></p>
+
+        <h1>This is h1</h1>
+        <h2>This is h2</h2>
+        <h6>This is h6</h6>
+        <h3>Link Styles</h3>
+    </section>
+
+    <section>
+        <h1 class="heading">2. style for links as a: link, a: active, a: hover, a: visited</h1>
+        <p class="links">
+            Active: Green <br>
+            Visited: Orange <br>
+            Hover: red <br>
+            Link: blue
+        </p>
+        <ul>
+            <li><a href="#1">Link 1</a></li>
+            <li><a href="#2">Link 2</a></li>
+            <li><a href="#3">Link 3</a></li>
+            <li><a href="#4">Link 4</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h1 class="heading">3. Element visibility property</h1>
+        <p>This paragraph demonstrates the element visibility property.</p>
+        <div class="hidden-element">
+            This element is hidden.
+        </div>
+    </section>
+
+    <section>
+        <h1 class="heading">4. Background repeat</h1>
+        <div class="bg repeat"></div>
+        
+        <h1 class="heading">4. Background no repeat</h1>
+        <div class="bg norepeat"></div>
+    </section>
+
+</body>
+</html>
+
+
+//5style.css
+
+h1.heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 0, 34);
+    text-decoration: double;
+    text-transform: uppercase;
+}
+h1 {
+    font-family: Arial, sans-serif;
+}
+p {
+    font-family: 'Times New Roman', serif;
+}
+
+a {
+    font-size: 25px;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:active {
+    color: green;
+}
+
+.hidden-element {
+    visibility: hidden;
+}
+
+.bg {
+    min-height: 60vh;
+}
+
+.norepeat {
+    background: url('https://images.shiksha.com/mediadata/images/1563772159phpav6WRj.jpeg') no-repeat;
+}
+
+.repeat {
+    background: url('https://images.shiksha.com/mediadata/images/1563772159phpav6WRj.jpeg');
+}
+
+.normal {
+    color: blue;
+}
+
+.bold {
+    font-weight: bold;
+    color: blue;
+}
+
+.italic {
+    font-style: italic;
+    color: blue;
+}
+
+.oblique {
+    font-style: oblique;
+    color: blue;
+}
+
+section {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.small-caps {
+    font-variant: small-caps;
+    color: blue;
+}
+
+.Green {
+    color: green;
+}
