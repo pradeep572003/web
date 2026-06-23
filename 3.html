@@ -1,0 +1,74 @@
+//index.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Four Frame Layout</title>
+</head>
+
+<frameset rows="50%,50%">
+    
+    <!-- Top Row -->
+    <frameset cols="50%,50%">
+        <frame src="3top-left.html">
+        <frame src="3top-right.html">
+    </frameset>
+
+    <!-- Bottom Row -->
+    <frameset cols="50%,50%">
+        <frame src="3bottom-left.html">
+        <frame src="3bottom-right.html">
+    </frameset>
+
+    <noframes>
+        <body>
+            Your browser does not support frames.
+        </body>
+    </noframes>
+
+</frameset>
+</html>
+
+//top-left
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top Left</title>
+</head>
+<body bgcolor="green">
+    <h2>TOP LEFT BLOCK</h2>
+</body>
+</html>
+
+//top-right
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top Right</title>
+</head>
+<body bgcolor="lightgray">
+    <h2>TOP RIGHT BLOCK</h2>
+</body>
+</html>
+
+//bottom-right
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bottom Left</title>
+</head>
+<body bgcolor="blue">
+    <h2 style="color:white;">BOTTOM LEFT BLOCK</h2>
+</body>
+</html>
+
+//bottom-left
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bottom Left</title>
+</head>
+<body bgcolor="blue">
+    <h2 style="color:white;">BOTTOM LEFT BLOCK</h2>
+</body>
+</html>
